@@ -1,0 +1,156 @@
+body {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    height: 100%;
+    margin: 0;
+    background-color: black;
+  }
+  
+  h1 {
+    font-family: sans-serif;
+    font-size: 3em;
+    color: #ffc720;
+    text-align: center;
+    text-transform: uppercase;
+    letter-spacing: 4px;
+    text-shadow: 2px 2px 4px #000000;
+    margin-top: 20px;
+  }
+  
+  .search-field {
+    display: flex;
+    align-items: center;
+    margin-top: 20px;
+  }
+  
+  .search-field input {
+    font-family: sans-serif;
+    font-size: 1em;
+    border: 2px solid #ffc720;
+    border-radius: 10px;
+    background-color: #000000;
+    color: #ffc720;
+    padding: 10px;
+    margin-bottom: 10px;
+  }
+  .search-field select {
+    font-family: sans-serif;
+    font-size: 1em;
+    border: 2px solid #ffc720;
+    border-radius: 10px;
+    background-color: #000000;
+    color: #ffc720;
+    padding: 10px;
+    margin-bottom: 10px;
+    margin-left: 10px ;
+
+  }
+  
+  .search-field button {
+    font-family: sans-serif;
+    font-size: 1em;
+    background-color: #000000;
+    color: #ffc720;
+    border: 2px solid #ffc720;
+    border-radius: 10px;
+    padding: 10px;
+    cursor: pointer;
+    transition: background-color 0.3s, color 0.3s, border 0.3s;
+    margin-bottom: 10px;
+    margin-left: 10px ;
+
+  }
+  
+  .search-field button:hover {
+    background-color: #ffc720;
+    color: #000000;
+    border: 2px solid #000000;
+  }
+  
+  .button-list {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    margin-top: 20px;
+  }
+  
+  .button-list button {
+    font-family: sans-serif;
+    font-size: 2em;
+    background-color: #000000;
+    color: #ffc720;
+    border: 2px solid #ffc720;
+    border-radius: 10px;
+    padding: 10px 20px;
+    margin-bottom: 10px;
+    cursor: pointer;
+    transition: background-color 0.3s, color 0.3s;
+  }
+  
+  .button-list button:hover {
+    background-color: #ffc720;
+    color: #000000;
+  }
+  .content-area {
+    display: flex;
+  }
+  .result-item {
+    background-color: #000000; 
+    border: 2px solid #ffc720; 
+    border-radius: 10px; 
+    padding: 10px; 
+    margin-bottom: 10px;
+    transition: background-color 0.3s, color 0.3s, border 0.3s;
+    font-family: sans-serif;
+    font-size: 0.75em;
+    font-weight: bold;
+    color: #ffc720;
+    margin-bottom: 8px; 
+    cursor: pointer;
+
+  }
+   
+  .result-item:hover {
+    background-color: #ffc720;
+    color: black;
+    border: 2px solid #000000;
+  }
+  .pagination-container {
+    display: flex;
+    align-items: center;
+    margin-left: 20px;
+  }
+  .pagination-container button {
+    font-family: sans-serif;
+    font-size: 1em;
+    background-color: #000000;
+    color: #ffc720;
+    border: 2px solid #ffc720;
+    border-radius: 10px;
+    padding: 10px;
+    cursor: pointer;
+    transition: background-color 0.3s, color 0.3s, border 0.3s;
+    margin-bottom: 10px;
+    margin-left: 10px ;
+    }
+    .pagination-container button:hover {
+        background-color: #ffc720;
+        color: #000000;
+        border: 2px solid #000000;
+    }
+    .profile-container {
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        margin-top: 20px;
+        font-family: sans-serif;
+        font-size: 1.6em;
+        background-color: #000000;
+        color: #ffc720;
+        border: 2px solid #ffc720;
+        border-radius: 10px;
+        padding: 10px 20px;
+        margin-bottom: 10px;
+        margin-left: 20px;
+    }

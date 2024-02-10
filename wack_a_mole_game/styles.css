@@ -1,0 +1,131 @@
+body {
+    background: url('muddy.jpg') center top fixed;
+    background-size: cover;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+}
+/*Title Styles*/
+#title-info {
+    text-align: center; 
+    border: solid 5px; 
+    margin-left: 200px;
+    margin-right: 200px; 
+    border-radius: 40%;
+    color: #228B22; 
+    background: rgba(255, 255, 255, 0.8); 
+}
+
+/* Container for the entire game */
+.game-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    border: solid #663300;
+    width: 1000px; 
+    margin: 0 auto; 
+    background: url('grass-background.jpg'); 
+    background-size: cover; 
+    background-repeat: no-repeat;
+}
+
+/* Container for the grid of squares */
+.grid {
+    padding-left: 200px;
+    width: 606px;
+    display: flex;
+    flex-wrap: wrap;
+    margin-right: 20px; 
+    background: rgba(255, 255, 255, 0.5); 
+    padding: 20px;
+}
+
+/* Individual square */
+.square {
+    width: 150px;
+    height: 150px; 
+    border: solid #663300 3px; 
+    background-color: #8B4513; 
+    border-radius: 50%; 
+    position: relative;
+    overflow: hidden; 
+}
+
+.square:before {
+    content: '';
+    position: absolute;
+    width: 50px; 
+    height: 30px; 
+    background-color: #663300; 
+    bottom: 5px; 
+    left: 50%; 
+    transform: translateX(-50%); 
+    border-radius: 50%; 
+}
+
+/* Mole style */
+.mole {
+    
+    background-color: transparent; 
+    background-image: url('mole.jpg'); 
+    background-size: cover; 
+
+}
+
+/* Adjust mole animation */
+.mole.active {
+    transform: scale(1.2);
+}
+
+/*Bomb style */
+.bomb {
+    background-color: transparent; /* Set the background color to transparent */
+    background-image: url('tnt.jpg'); /* Add the image as the background */
+    background-size: cover; /* Adjust the image size to cover the element */
+}
+
+/* Adjust bomb animation */
+.bomb.active {
+    transform: scale(1.2);
+}
+
+/* Container for the time and score info */
+.info {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    margin-right: 25px;
+    margin-top: 100px;
+    border: solid;
+    border-radius: 25%;
+    padding: 10px;
+    padding-left: 30px;
+    padding-right: 30px;
+    background: rgba(255, 255, 255, 0.8); 
+    padding: 20px;
+}
+
+#Play-button {
+    width: 100px; 
+    height: 100px; 
+    background-color: red; 
+    border-radius: 50%; 
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: white; 
+    font-size: 24px; 
+    cursor: pointer; 
+    margin-top: 380px; 
+    
+}
+
+/* Style for time and score elements */
+#score,
+#time-left {
+    font-size: 24px;
+    margin: 5px 0; 
+    font-size: 24px;
+    margin: 5px 0;
+    color: #228B22; 
+}

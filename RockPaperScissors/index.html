@@ -1,0 +1,20 @@
+<!DOCTYPE html><!--Declaration specifies that this is an html5 doctype-->
+<html lang="en" dir="ltr"><!--opening tag; lang attribute indicates language (english) dir sets text direction as left to right-->
+    <head><!--contains meta information such as title, character encoding, links to external resouces like stylesheets and scripts-->
+        <meta charset="utf-8"><!--character encoding, utf-8 supports a wide range of characters from different languages-->
+        <title>Rock Paper Scissors</title>
+    </head><!--<head> will not be seen on the web page but provides info for browsers and search engines-->
+    <body><!--<body> shows the content on the web page-->
+
+        <h2>Computer Choice: <span id="computer-choice"></span></h2><!-- This creates a level 2 heading (h2) that displays the text "Computer Choice:" followed by an empty <span> element with the id attribute set to "computer-choice." The <span> element is a placeholder for dynamic content that will be inserted using JavaScript.-->
+        <h2>User Choice: <span id="user-choice"></span></h2>
+        <h2>Result: <span id="result"></span></h2>
+
+        <button id="rock">rock</button> <!--These lines create three buttons with the labels "rock," "paper," and "scissors." Each button has a unique id attribute ("rock," "paper," "scissors") that can be used to identify the button elements in JavaScript.-->
+        <button id="paper">paper</button>
+        <button id="scissors">scissors</button>
+
+
+        <script src="app.js" charset="utf-8"></script> <!-- This line imports an external JavaScript file named "app.js." The src attribute specifies the path to the script file, and the charset attribute indicates the character encoding of the script. The JavaScript code in "app.js" will contain the logic for the Rock Paper Scissors game, handling user interactions and updating the web page content dynamically.-->
+    </body>
+</html>

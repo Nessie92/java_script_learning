@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>swapi_app</title>
+    <link rel="stylesheet" href="styles.css"> 
+</head>
+<body>
+    <h1>SWAPI</h1>
+    <div class="search-field">
+        <input type="text" id="search-input" placeholder="What do you want to find?">
+        <select name="search-filter" id="search-filter">
+            <option value="people">People</option>
+            <option value="planets">Planets</option>
+            <option value="films">Films</option>
+            <option value="species">Species</option>
+            <option value="vehicles">Vehicles</option>
+            <option value="starships">Starships</option>
+        </select>
+        <button id="search-button">Search</button>
+    </div>
+    <div class="content-area">
+        <div class="button-list">
+            <button id="peopleBTN">People</button>
+            <button id="planetsBTN">Planets</button>
+            <button id="filmsBTN">Films</button>
+            <button id="speciesBTN">Species</button>
+            <button id="vehiclesBTN">Vehicles</button>
+            <button id="starshipsBTN">Starships</button>
+        </div>
+        <div class="result-container">
+            <ul class="result-list">
+                <!-- <li class="result-item">
+                    <h2 class="result-name">Luke Skywalker</h2>
+                    <p class="result-cat">People</p>
+                </li> -->
+            </ul>
+        </div>
+        <div class="pagination-container">
+        </div>
+        <div class="profile-container">
+            <div id="profile-details"></div>
+        </div>
+    </div>
+    <script src="app.js"></script>
+</body>
+</html>
